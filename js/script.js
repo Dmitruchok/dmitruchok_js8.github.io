@@ -9,7 +9,8 @@ $(function () {
   $adress = $('#Adress'),
   $prompt1 = $('.prompt_1'),
   $prompt2 = $('.prompt_2'),
-  $prompt3 = $('.prompt_3');
+  $prompt3 = $('.prompt_3'),
+  $buttonPrompt = $('button');
 
   $firstName.mousemove( function () {
       $prompt1.css({
@@ -48,5 +49,12 @@ $(function () {
       display: 'block',
       opacity: '0'
     }, 800);
+  });
+
+  $buttonPrompt.mousemove( function () {
+    $buttonPrompt.css('background', '#eee');
+  })
+  .mouseout( function () {
+    $buttonPrompt.css('background', '#f6f6f6');
   });
 });
