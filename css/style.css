@@ -1,62 +1,37 @@
 .wrapper {
   margin: 100px auto;
-  width: 620px;
-  height: 370px;
-  border: 1px solid #c5c5c5;
+  width: 540px;
+  height: 350px;
+  border: 1px solid #bfbfbf;
 }
 
-.container {
-  margin: 10px 0 0 10px;
-  width: 580px;
-  border: 1px solid #c5c5c5;
-  border-radius: 4px;
+form {
+  border: 1px solid #8e8787;
+  box-shadow: 0 0 5px rgba(0,0,0,0.5);
+  margin: 10px  10px 0 10px;
+  width: 520px;
 }
 
-.tabs_form {
-  background-color: #eee;
-  border: 1px solid #c5c5c5;
-  border-radius: 5px;
-  margin: 5px auto;
-  width: 570px;
+label {
+  display: flex;
+  margin-bottom: 20px;
+  padding: 10px 15px;
+
 }
 
-.tabs_form ul {
-    margin: 5px 0 0 3px;
-    padding: 0;
-}
-
-.tabs_form .one_link {
-  background-color: #007fff;
-}
-
-.tabs_form li {
-  background-color: #fff;
-  display: inline-block;
-  list-style: none;
-  border: 1px solid #c5c5c5;
-  border-bottom: 0;
-  border-radius: 3px 3px 0 0;
-  height: 40px;
-}
-
-.tabs_form a {
+span {
   display: block;
-  padding: 10px;
-  color: #000;
-  text-decoration: none;
+  width: 85px;
 }
 
-.container p {
-  margin: 30px 30px;
+input {
+  width: 180px;
 }
 
-.tab_1{
-  display: block;
-  margin: 0 auto;
-}
-
-.tab_2,
-.tab_3 {
-  display: none;
-  margin: 0 auto;
+button {
+  background: #ededed;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin: 0 0 0 10px;
+  padding: 7px 13px;
 }
