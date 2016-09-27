@@ -1,6 +1,6 @@
 .wrapper {
   margin: 100px auto;
-  width: 540px;
+  width: 520px;
   height: 350px;
   border: 1px solid #bfbfbf;
 }
@@ -9,7 +9,7 @@ form {
   border: 1px solid #8e8787;
   box-shadow: 0 0 5px rgba(0,0,0,0.5);
   margin: 10px  10px 0 10px;
-  width: 520px;
+  width: 500px;
 }
 
 label {
@@ -29,7 +29,8 @@ input {
 }
 
 button {
-  background: #ededed;
+  color: #6d6868;
+  background: #f6f6f6;
   border: 1px solid #ccc;
   border-radius: 3px;
   margin: 0 0 0 10px;
