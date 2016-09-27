@@ -28,6 +28,19 @@ input {
   width: 180px;
 }
 
+.prompt_1,
+.prompt_2,
+.prompt_3 {
+  border: 1px solid #bfbfbf;
+  width: 200px;
+}
+
+.prompt_1 p,
+.prompt_2 p,
+.prompt_3 p {
+  margin: 8px 6px;
+}
+
 button {
   color: #6d6868;
   background: #f6f6f6;
