@@ -6,6 +6,7 @@
 $(function () {
   var $firstName = $('#Firstname'),
   $lastname = $('#Lastname'),
+  $promtContain = $('promt_contain'),
   $adress = $('#Adress'),
   $prompt1 = $('.prompt_1'),
   $prompt2 = $('.prompt_2'),
@@ -51,10 +52,30 @@ $(function () {
     }, 800);
   });
 
+  $buttonPrompt.click( function () {
+    $prompt1.css({
+      display: 'block',
+      opacity: '100'
+    })
+    $prompt1.css({
+      display: 'block',
+      opacity: '100'
+    })
+    $prompt2.css({
+      display: 'block',
+      opacity: '100'
+    })
+    $prompt3.css({
+      display: 'block',
+      opacity: '100'
+    })
+  });
+
   $buttonPrompt.mousemove( function () {
-    $buttonPrompt.css('background', '#eee');
+    $(this).css('background', '#eee');
   })
   .mouseout( function () {
     $buttonPrompt.css('background', '#f6f6f6');
   });
+
 });
