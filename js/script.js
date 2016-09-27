@@ -4,23 +4,49 @@
 });*/
 
 $(function () {
-  var $oneList = $('.one_link'),
-  $twoList = $('.two_link'),
-  $threeList = $('.three_link'),
-  $tab_1 = $('.tab_1'),
-  $tab_2 = $('.tab_2'),
-  $tab_3 = $('.tab_3'),
-  $container = $('.container'),
-  $wrapper = $('.wrapper');
+  var $firstName = $('#Firstname'),
+  $lastname = $('#Lastname'),
+  $adress = $('#Adress'),
+  $prompt1 = $('.prompt_1'),
+  $prompt2 = $('.prompt_2'),
+  $prompt3 = $('.prompt_3');
 
-  $oneList.on('click', function () {
-    $(this).css( 'background', '#007fff' ),
-    $tab_1.css( 'display', 'block'),
-    $wrapper.css( 'overflow', 'none' );
-    $container.css( 'margin', '10px 0px 10px 10px' ),
-    $twoList.css( 'background', '#fff' ),
-    $threeList.css( 'background', '#fff' ),
-    $tab_2.css( 'display', 'none' ),
-    $tab_3.css( 'display', 'none');
+  $firstName.mousemove( function () {
+      $prompt1.css({
+        display: 'block',
+        opacity: '100'
+    })
+  })
+  .mouseout( function () {
+    $prompt1.animate({
+      display: 'block',
+      opacity: '0'
+    }, 800);
+  });
+
+  $lastname.mousemove( function () {
+    $prompt2.css({
+      display: 'block',
+      opacity: '100'
+    })
+  })
+  .mouseout( function () {
+    $prompt2.animate({
+      display: 'block',
+      opacity: '0'
+    }, 800);
+  });
+
+  $adress.mousemove( function () {
+    $prompt3.css({
+      display: 'block',
+      opacity: '100'
+    })
+  })
+  .mouseout( function () {
+    $prompt3.animate({
+      display: 'block',
+      opacity: '0'
+    }, 800);
   });
 });
