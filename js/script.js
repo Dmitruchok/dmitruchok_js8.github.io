@@ -6,7 +6,7 @@
 $(function () {
   var $firstName = $('#Firstname'),
   $lastname = $('#Lastname'),
-  $promtContain = $('promt_contain'),
+  $promtContain = $('.prompt_1, .prompt_2, .prompt_3'),
   $adress = $('#Adress'),
   $prompt1 = $('.prompt_1'),
   $prompt2 = $('.prompt_2'),
@@ -53,19 +53,7 @@ $(function () {
   });
 
   $buttonPrompt.click( function () {
-    $prompt1.css({
-      display: 'block',
-      opacity: '100'
-    })
-    $prompt1.css({
-      display: 'block',
-      opacity: '100'
-    })
-    $prompt2.css({
-      display: 'block',
-      opacity: '100'
-    })
-    $prompt3.css({
+    $promtContain.css({
       display: 'block',
       opacity: '100'
     })
@@ -77,5 +65,4 @@ $(function () {
   .mouseout( function () {
     $buttonPrompt.css('background', '#f6f6f6');
   });
-
 });
