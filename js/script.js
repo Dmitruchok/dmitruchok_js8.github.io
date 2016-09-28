@@ -53,6 +53,7 @@ $(function () {
   });
 
   $buttonPrompt.click( function () {
+    $(this).css('background', 'green');
     $promtContain.css({
       display: 'block',
       opacity: '100'

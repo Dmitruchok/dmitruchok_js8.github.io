@@ -1,6 +1,6 @@
 .wrapper {
   margin: 100px auto;
-  width: 560px;
+  width: 520px;
   height: 350px;
   border: 1px solid #bfbfbf;
 }
@@ -10,14 +10,14 @@ form {
   border: 1px solid #8e8787;
   box-shadow: 0 0 5px rgba(0,0,0,0.5);
   margin: 10px  10px 0 10px;
-  padding-bottom: 20px;
-  width: 540px;
+  width: 500px;
 }
 
 label {
   display: flex;
-  margin-bottom: 27px;
-  padding: 10px 15px 0 15px;
+  margin-bottom: 20px;
+  padding: 10px 15px;
+
 }
 
 span {
@@ -33,22 +33,14 @@ input {
 .prompt_2,
 .prompt_3 {
   border: 1px solid #bfbfbf;
-  width: 230px;
-  box-shadow: 0 0 10px #bfbfbf;
+  border-radius: 5px;
+  width: 200px;
 }
 
 .prompt_1 p,
 .prompt_2 p,
 .prompt_3 p {
-  margin: 12px 12px;
-}
-
-.prompt_1,
-.prompt_2,
-.prompt_3 {
-  display: block;
-  opacity: 0;
-
+  margin: 8px 6px;
 }
 
 button {
