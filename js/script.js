@@ -1,8 +1,3 @@
-
-/*document.addEventListener('DOMContentLoaded', function () {
-  console.log('DOMContentLoaded');
-});*/
-
 $(function () {
   var $firstName = $('#Firstname'),
   $lastname = $('#Lastname'),
@@ -18,8 +13,7 @@ $(function () {
         display: 'block',
         opacity: '100'
     })
-  })
-  .mouseout( function () {
+  }).mouseout( function () {
     $prompt1.animate({
       display: 'block',
       opacity: '0'
@@ -30,9 +24,8 @@ $(function () {
     $prompt2.css({
       display: 'block',
       opacity: '100'
-    })
-  })
-  .mouseout( function () {
+    });
+  }).mouseout( function () {
     $prompt2.animate({
       display: 'block',
       opacity: '0'
@@ -43,30 +36,27 @@ $(function () {
     $prompt3.css({
       display: 'block',
       opacity: '100'
-    })
-  })
-  .mouseout( function () {
+    });
+  }).mouseout( function () {
     $prompt3.animate({
       display: 'block',
       opacity: '0'
     }, 800);
   });
 
-  $buttonPrompt.mouseup(function () {
+  $buttonPrompt.mouseup( function () {
     $(this).css('background', '#eee');
     $promtContain.css({
       display: 'block',
       opacity: '100'
-    })
-  }).mousedown(function () {
+    });
+  }).mousedown( function () {
     $(this).css('background', '#007fff');
-  })
-
-  $buttonPrompt.mousemove( function () {
-    $(this).css('background', '#eee');
-  })
-  .mouseout( function () {
-    $buttonPrompt.css('background', '#f6f6f6');
   });
 
+  $buttonPrompt.mousemove( function () {
+    $(this).css( 'background', '#eee' );
+  }).mouseout( function () {
+    $buttonPrompt.css( 'background', '#f6f6f6' );
+  });
 });
