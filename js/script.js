@@ -52,13 +52,15 @@ $(function () {
     }, 800);
   });
 
-  $buttonPrompt.click( function () {
-    $(this).css('background', 'green');
+  $buttonPrompt.mouseup(function () {
+    $(this).css('background', '#eee');
     $promtContain.css({
       display: 'block',
       opacity: '100'
     })
-  });
+  }).mousedown(function () {
+    $(this).css('background', '#007fff');
+  })
 
   $buttonPrompt.mousemove( function () {
     $(this).css('background', '#eee');
@@ -66,4 +68,5 @@ $(function () {
   .mouseout( function () {
     $buttonPrompt.css('background', '#f6f6f6');
   });
+
 });
